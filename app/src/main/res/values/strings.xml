@@ -32,5 +32,18 @@
     <string name="couse_content">Managing your school or university life.</string>
     <string name="addcourse">Add Course</string>
     <string name="viewcouse">View Course</string>
+    <string name="hol">holl</string>
+    <string name="addworkoutplan">Add Workout Plan</string>
+    <string name="addworkoutname">Enter Workout name</string>
+    <string name="addworkoutname">Enter Workout name</string>
+    <string name="addstarttime">Starting Time</string>
+    <string name="addendtime">Ending Time</string>
+    <string name="adddistance">Distance</string>
+    <string name="addplanbtn">ADD</string>
+    <string name="clearviewbtn">CLEAR</string>
+    <string name="hintworkoutname">Enter workout name</string>
+    <string name="hintstarttime">Enter a Start time</string>
+    <string name="hintendtime">Enter a End Time</string>
+    <string name="hintdist">Enter a Distance</string>
 
 </resources>
