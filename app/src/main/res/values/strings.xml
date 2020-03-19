@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">DashHelper</string>
+    <string name="cyclingworkout">Cycling workout</string>
+    <string name="cyclingexrcises">Cycling Exercises</string>
+    <string name="cyclingtext">Cycling is easy to fit into your daily routing by riding to the shop, school or work place.</string>
+    <string name="cyclingaddplantext">Add Plan</string>
+    <string name="cyclingtextc">Add Workout Planning</string>
+    <string name="cyclingviweplantext">View Plan</string>
+    <string name="cyclingtextv">View the previously added workout plans.</string>
+    <string name="cyclingdonenedworkouts">Done Workouts</string>
+    <string name="cyclingdonec">View the previously added workout plans.</string>
+
 </resources>

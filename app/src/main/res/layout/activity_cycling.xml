@@ -27,7 +27,7 @@
             android:layout_height="48dp"
             android:layout_marginTop="90dp"
             android:fontFamily="sans-serif-medium"
-            android:text="Cycling workout"
+            android:text="@string/cyclingworkout"
             android:textAlignment="center"
             android:textColor="#777474"
             android:textSize="25sp"
@@ -77,7 +77,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Add Plan"
+                    android:text="@string/cyclingaddplantext"
                     android:textStyle="bold" />
 
                 <View
@@ -91,7 +91,7 @@
                     android:layout_height="50dp"
                     android:gravity="center"
                     android:padding="5dp"
-                    android:text="Add Workout Planning"
+                    android:text="@string/cyclingtextc"
                     android:textColor="@android:color/darker_gray" />
 
             </LinearLayout>
@@ -141,21 +141,20 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="View Plan"
+                    android:text="@string/cyclingviweplantext"
                     android:textStyle="bold" />
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:layout_margin="10dp"
-                    android:background="@color/lightgray" />
+                    android:layout_margin="10dp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:gravity="center"
                     android:padding="5dp"
-                    android:text="View the previously added workout plans."
+                    android:text="@string/cyclingtextv"
                     android:textColor="@android:color/darker_gray" />
 
             </LinearLayout>
@@ -205,21 +204,20 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Done Workouts"
+                    android:text="@string/cyclingdonenedworkouts"
                     android:textStyle="bold" />
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:layout_margin="10dp"
-                    android:background="@color/lightgray" />
+                    android:layout_margin="10dp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:gravity="center"
                     android:padding="5dp"
-                    android:text="View the previously added workout plans."
+                    android:text="@string/cyclingdonec"
                     android:textColor="@android:color/darker_gray" />
 
             </LinearLayout>
@@ -234,7 +232,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:text="Cycling Exercises"
+        android:text="@string/cyclingexrcises"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
@@ -252,8 +250,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:text="Cycling is easy to fit into your daily routing by riding to the shop, school or work place
-        ."
+        android:text="@string/cyclingtext"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
