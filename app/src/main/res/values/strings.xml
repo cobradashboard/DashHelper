@@ -9,5 +9,18 @@
     <string name="cyclingtextv">View the previously added workout plans.</string>
     <string name="cyclingdonenedworkouts">Done Workouts</string>
     <string name="cyclingdonec">View the previously added workout plans.</string>
+    <string name="singuptext">Sign up</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="conpassword">Confirm Password</string>
+    <string name="createaccountbtn">Create Account</string>
+    <string name="dashhelp">D A S H E L P E R</string>
+    <string name="dashhelpcontent">--Track your activitys on Lifelog--</string>
+    <string name="logbtn">Login</string>
+    <string name="outbtn">Log out</string>
+    <string name="workoutHead">Keep plan of your Workouts</string>
+    <string name="holidaysHead">Plan Your Holidays</string>
+    <string name="timetableHead">Add your Time Tables</string>
+    <string name="communityHead">Share your Activities</string>
 
 </resources>

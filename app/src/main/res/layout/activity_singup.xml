@@ -17,7 +17,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:fontFamily="sans-serif-medium"
-        android:text="Sign Up"
+        android:text="@string/singuptext"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
         android:textStyle="normal|bold"
@@ -84,7 +84,7 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="10dp"
                 android:fontFamily="sans-serif-medium"
-                android:text="Username"
+                android:text="@string/username"
                 android:textSize="20sp" />
 
             <TextView
@@ -94,7 +94,7 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="90dp"
                 android:fontFamily="sans-serif-medium"
-                android:text="Password"
+                android:text="@string/password"
                 android:textSize="20sp" />
 
             <TextView
@@ -104,7 +104,7 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="170dp"
                 android:fontFamily="sans-serif-medium"
-                android:text="Confirm Password"
+                android:text="@string/conpassword"
                 android:textSize="20sp" />
 
         </androidx.cardview.widget.CardView>
@@ -117,7 +117,7 @@
         android:layout_marginTop="28dp"
         android:background="#F00E3B"
         android:shadowRadius="@dimen/cardview_default_radius"
-        android:text="Create Account"
+        android:text="@string/createaccountbtn"
         android:textColor="#FFFFFF"
         android:textStyle="normal|bold"
         app:layout_constraintCircleRadius="1dp"

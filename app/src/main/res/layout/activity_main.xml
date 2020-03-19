@@ -16,7 +16,7 @@
         android:layout_marginStart="320dp"
         android:layout_marginTop="20dp"
         android:background="#6286F0"
-        android:text="Login"
+        android:text="@string/logbtn"
         android:textColor="#FBFCFC"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
@@ -30,7 +30,7 @@
         android:layout_marginStart="320dp"
         android:layout_marginTop="20dp"
         android:background="#536DFE"
-        android:text="Log Out"
+        android:text="@string/outbtn"
         android:textColor="#E5FDFD"
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
@@ -90,7 +90,7 @@
                     android:layout_height="48dp"
                     android:gravity="center"
                     android:padding="5dp"
-                    android:text="Keep plan of your Workouts"
+                    android:text="@string/workoutHead"
                     android:textColor="@android:color/darker_gray" />
 
                 <View
@@ -156,7 +156,7 @@
                     android:layout_height="48dp"
                     android:gravity="center"
                     android:padding="5dp"
-                    android:text="Plan Your Holidays"
+                    android:text="@string/holidaysHead"
                     android:textColor="@android:color/darker_gray" />
 
                 <View
@@ -220,7 +220,7 @@
                     android:layout_height="50dp"
                     android:gravity="center"
                     android:padding="5dp"
-                    android:text="Add your Time Tables"
+                    android:text="@string/timetableHead"
                     android:textColor="@android:color/darker_gray" />
 
                 <View
@@ -286,7 +286,7 @@
                     android:layout_height="48dp"
                     android:gravity="center"
                     android:padding="5dp"
-                    android:text="Share your Activities"
+                    android:text="@string/communityHead"
                     android:textColor="@android:color/darker_gray" />
 
                 <View
@@ -324,7 +324,7 @@
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
             android:fontFamily="@font/aclonica"
-            android:text="D A S H E L P E R"
+            android:text="@string/dashhelp"
             android:textAlignment="center"
             android:textColor="#FFFF"
             android:textSize="24sp" />
@@ -337,7 +337,7 @@
             android:layout_marginTop="2dp"
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
-            android:text="--Track your activitys on Lifelog--"
+            android:text="@string/dashhelpcontent"
             android:textAlignment="center"
             android:textColor="#FFFFFF" />
     </LinearLayout>
