@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".addcourse_homepage"></activity>
+        <activity android:name=".addcoursepage"></activity>
+        <activity android:name=".addcourse_homepage" />
         <activity android:name=".timetable" />
         <activity android:name=".swimming" />
         <activity android:name=".cycling" />
