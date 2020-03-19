@@ -22,5 +22,6 @@
     <string name="holidaysHead">Plan Your Holidays</string>
     <string name="timetableHead">Add your Time Tables</string>
     <string name="communityHead">Share your Activities</string>
+    <string name="welcomebacktext">Welcome Back</string>
 
 </resources>

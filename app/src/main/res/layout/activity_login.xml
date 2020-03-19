@@ -16,7 +16,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:fontFamily="sans-serif-black"
-        android:text="Welcome Back !"
+        android:text="@string/welcomebacktext"
         android:textColor="#FCFCFC"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -83,7 +83,7 @@
                 android:layout_height="35dp"
                 android:layout_marginStart="70sp"
                 android:layout_marginTop="45sp"
-                android:text="Username"
+                android:text="@string/username"
                 android:textSize="18sp" />
 
             <TextView
@@ -92,7 +92,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="70sp"
                 android:layout_marginTop="150sp"
-                android:text="Password"
+                android:text="@string/password"
                 android:textSize="18sp" />
 
             <Button

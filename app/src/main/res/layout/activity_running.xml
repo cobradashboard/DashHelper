@@ -26,7 +26,6 @@
             android:id="@+id/textView4"
             android:layout_width="264dp"
             android:layout_height="48dp"
-            android:layout_marginLeft="@dimen/default_gap"
             android:layout_marginTop="90dp"
             android:fontFamily="sans-serif-medium"
             android:text="Running workout"
@@ -85,8 +84,7 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:layout_margin="10dp"
-                    android:background="@color/lightgray" />
+                    android:layout_margin="10dp" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -149,8 +147,7 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:layout_margin="10dp"
-                    android:background="@color/lightgray" />
+                    android:layout_margin="10dp" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -213,8 +210,7 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:layout_margin="10dp"
-                    android:background="@color/lightgray" />
+                    android:layout_margin="10dp" />
 
                 <TextView
                     android:layout_width="match_parent"
