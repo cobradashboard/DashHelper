@@ -23,5 +23,14 @@
     <string name="timetableHead">Add your Time Tables</string>
     <string name="communityHead">Share your Activities</string>
     <string name="welcomebacktext">Welcome Back</string>
+    <string name="addcouse">Add Course</string>
+    <string name="addexams">Add Exams</string>
+    <string name="viewresult">View Result</string>
+    <string name="timetable">Timetable</string>
+    <string name="timetablecontant">Managing your school or university life. Save your timetable and all tasks from course to exams.</string>
+    <string name="course">Course</string>
+    <string name="couse_content">Managing your school or university life.</string>
+    <string name="addcourse">Add Course</string>
+    <string name="viewcouse">View Course</string>
 
 </resources>
