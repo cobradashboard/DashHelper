@@ -62,7 +62,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="360dp"
-                android:background="#4CAF50"
+                android:background="#03A9F4"
                 android:text="Share" />
 
             <EditText
