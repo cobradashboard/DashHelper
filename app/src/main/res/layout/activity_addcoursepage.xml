@@ -80,7 +80,7 @@
                 android:id="@+id/imageView6"
                 android:layout_width="59dp"
                 android:layout_height="47dp"
-                app:srcCompat="@drawable/sub" />
+                app:srcCompat="@drawable/book" />
 
         </androidx.cardview.widget.CardView>
     </LinearLayout>
@@ -219,7 +219,7 @@
             <ImageView
                 android:layout_width="52dp"
                 android:layout_height="44dp"
-                app:srcCompat="@drawable/date" />
+                app:srcCompat="@drawable/clock" />
 
         </androidx.cardview.widget.CardView>
     </LinearLayout>
