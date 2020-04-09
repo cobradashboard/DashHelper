@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".newaddcourse">
+    tools:context=".addcoursepage">
 
 
     <LinearLayout
@@ -12,7 +12,7 @@
         android:layout_width="412dp"
         android:layout_height="143dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/back2"
+        android:background="@drawable/background3"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
