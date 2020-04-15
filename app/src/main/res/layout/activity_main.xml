@@ -67,8 +67,10 @@
             app:cardCornerRadius="10dp">
 
             <LinearLayout
+                android:id="@+id/crdId1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:clickable="true"
                 android:gravity="center"
                 android:orientation="vertical">
 
@@ -132,8 +134,10 @@
             app:cardCornerRadius="10dp">
 
             <LinearLayout
+                android:id="@+id/cardId2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:clickable="true"
                 android:gravity="center"
                 android:orientation="vertical">
 

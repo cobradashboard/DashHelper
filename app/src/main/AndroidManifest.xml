@@ -9,20 +9,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".swimming" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".add_plan"></activity>
+        <activity android:name=".view_plan" />
+        <activity android:name=".donned_workouts" />
+        <activity android:name=".swimming"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <activity android:name=".cycling" />
         <activity android:name=".walking" />
         <activity android:name=".running" />
+
         <activity android:name=".workouthome" />
+
         <activity android:name=".login" />
         <activity android:name=".singup" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivity" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
 
         <meta-data
             android:name="preloaded_fonts"
