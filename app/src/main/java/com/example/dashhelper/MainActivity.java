@@ -37,4 +37,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
 
+    private class intent {
+    }
 }
