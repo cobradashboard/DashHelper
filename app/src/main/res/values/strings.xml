@@ -51,5 +51,8 @@
     <string name="place">Select Place</string>
     <string name="timeAC">Select Time</string>
     <string name="dataAC">Select Date</string>
+    <string name="ViewAC">View Course Plan</string>
+    <string name="btndelete">DELETE</string>
+    <string name="UpadteAC">UPDATE</string>
 
 </resources>
