@@ -55,4 +55,14 @@
     <string name="btndelete">DELETE</string>
     <string name="UpadteAC">UPDATE</string>
 
+    <string name="xammmm">Exam</string>
+    <string name="timetablehome">Managing your school or university life. Save your timetable and all tasks from courses to exams.</string>
+    <string name="addexam">Add Exams</string>
+    <string name="viewexam">View Exam</string>
+
+    <string name="goodluck">Good Luck For Your Exam</string>
+    <string name="examdes">Do yoy best!</string>
+    <string name="examname">Enter Exam Name</string>
+    <string name="save">Save</string>
+
 </resources>
