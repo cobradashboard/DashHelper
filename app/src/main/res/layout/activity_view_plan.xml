@@ -8,11 +8,11 @@
 
     <LinearLayout
         android:id="@+id/linearLayout8"
-        android:layout_width="414dp"
-        android:layout_height="137dp"
+        android:layout_width="412dp"
+        android:layout_height="132dp"
         android:layout_marginStart="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/uip1"
+        android:background="@drawable/board1"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,7 +23,7 @@
 
         <TextView
             android:id="@+id/textView4"
-            android:layout_width="299dp"
+            android:layout_width="275dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="90dp"
             android:fontFamily="sans-serif-medium"
@@ -44,7 +44,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/btnexam"
+        android:background="@drawable/custbtnadd"
         android:text="UPDATE"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -82,7 +82,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/btnexam"
+        android:background="@drawable/custbtnadd"
         android:text="@string/btndelete"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
