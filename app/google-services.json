@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "885658458853",
+    "firebase_url": "https://dashhelper.firebaseio.com",
+    "project_id": "dashhelper",
+    "storage_bucket": "dashhelper.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:885658458853:android:7ff44db0f4ba504ea4120c",
+        "android_client_info": {
+          "package_name": "com.example.dashhelper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "885658458853-5npu7ho9aav9jf73s8b1a94ouc4mm27g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dashhelper",
+            "certificate_hash": "1d898f8957cfdca95faf47cc1c17872fccb2efe0"
+          }
+        },
+        {
+          "client_id": "885658458853-fatido72s9at5nhhhifafn47mam1dkd0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWuXkql2QqpYqbZIrAa90MDTvxBwSGrRU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "885658458853-fatido72s9at5nhhhifafn47mam1dkd0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

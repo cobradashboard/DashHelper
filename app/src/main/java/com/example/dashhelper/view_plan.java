@@ -12,3 +12,5 @@ public class view_plan extends AppCompatActivity {
         setContentView(R.layout.activity_view_plan);
     }
 }
+
+

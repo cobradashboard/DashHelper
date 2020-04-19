@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".addPlan">
+    tools:context=".add_plan">
 
     <LinearLayout
         android:id="@+id/linearLayout8"
@@ -23,7 +23,7 @@
 
         <TextView
             android:id="@+id/textView4"
-            android:layout_width="259dp"
+            android:layout_width="267dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="90dp"
             android:fontFamily="sans-serif-medium"
