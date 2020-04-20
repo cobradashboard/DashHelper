@@ -64,5 +64,10 @@
     <string name="examdes">Do yoy best!</string>
     <string name="examname">Enter Exam Name</string>
     <string name="save">Save</string>
+    <string name="exam">Exam View</string>
+
+    <string name="addresults">View Results</string>
+    <string name="congrats">Congratulations</string>
+    <string name="examcongrat">Congratulations on your excellent success and good luck for more progress. I have complete faith that you’ll pass your exam with good score.</string>
 
 </resources>
