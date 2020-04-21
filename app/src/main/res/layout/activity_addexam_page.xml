@@ -12,7 +12,7 @@
         android:layout_width="415dp"
         android:layout_height="132dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/timetableback"
+        android:background="@drawable/Time5"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

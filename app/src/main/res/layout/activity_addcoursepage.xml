@@ -12,7 +12,7 @@
         android:layout_width="412dp"
         android:layout_height="143dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/background3"
+        android:background="@drawable/Time4"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -278,7 +278,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:background="#CFBE27"
+
         android:text="@string/coursewelcome"
         android:textColor="#090909"
         android:textSize="18sp"
@@ -303,7 +303,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.095" />
+        app:layout_constraintVertical_bias="0.207" />
 
     <Button
         android:id="@+id/btnsaveAC"
@@ -313,7 +313,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/btncourse"
+        android:background="@drawable/ui1h"
 
         android:text="SAVE"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -331,7 +331,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/btncourse"
+        android:background="@drawable/ui1h"
 
         android:text="CLEAR"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -10,31 +10,26 @@
         android:layout_width="414dp"
         android:layout_height="137dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/art"
+        android:background="@drawable/Time1"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0" >
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="208dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:fontFamily="sans-serif-smallcaps"
-        android:text="@string/timetable"
-        android:textColor="#0C0C0C"
-        android:textSize="25sp"
-        android:textStyle="normal|bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.113" />
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="208dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="@string/timetable"
+            android:textColor="#0C0C0C"
+            android:textSize="25sp"
+            android:textStyle="normal|bold" />
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout85"
@@ -212,7 +207,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.189" />
+        app:layout_constraintVertical_bias="0.201" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
