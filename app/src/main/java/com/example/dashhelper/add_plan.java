@@ -7,6 +7,7 @@ import android.app.TimePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -23,7 +24,7 @@ public class add_plan extends AppCompatActivity implements View.OnClickListener 
 
 
     EditText txtworkout,txtstrtm,txtendtm,txtdist;
-    Button btnadd,btnclr,add;
+    Button btnadd,btnclr,add,start,end;
     TimePickerDialog timePickerDialog;
     Calendar calendar;
     int currentHour;
@@ -55,25 +56,17 @@ public class add_plan extends AppCompatActivity implements View.OnClickListener 
 
         btnadd = findViewById(R.id.addBtn);
         btnclr = findViewById(R.id.btnclrA);
-
+        start = findViewById(R.id.start);
+        end = findViewById(R.id.end);
 
         aPA = new add_planA();
 
         // define variables
         add = (Button) findViewById(R.id.addBtn);
 
-        //define onClickListner method for each page
-        add.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                dbRefw = FirebaseDatabase.getInstance().getReference();
-
-                private void writeNewData(String )
-            }
-        });
 
 
-        txtstrtm.setOnClickListener(new View.OnClickListener() {
+        start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 calendar = Calendar.getInstance();
@@ -90,6 +83,7 @@ public class add_plan extends AppCompatActivity implements View.OnClickListener 
                             amPm = "AM";
                         }
                         txtstrtm.setText(String.format("%02d:%02d",hourOfDay,minutes) + amPm);
+                        aPA.setStartingTime(String.format("%02d:%02d",hourOfDay,minutes) + amPm);
                     }
                 },currentHour,currentMinute,true);
                 timePickerDialog.show();
@@ -97,7 +91,7 @@ public class add_plan extends AppCompatActivity implements View.OnClickListener 
 
         });
 
-        txtendtm.setOnClickListener(new View.OnClickListener() {
+        end.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 calendar = Calendar.getInstance();
@@ -114,10 +108,27 @@ public class add_plan extends AppCompatActivity implements View.OnClickListener 
                             amPm = "AM";
                         }
                         txtendtm.setText(String.format("%02d:%02d",hourOfDay,minutes) + amPm);
+                        aPA.setEndingTime(String.format("%02d:%02d",hourOfDay,minutes) + amPm);
                     }
                 },currentHour,currentMinute,true);
                 timePickerDialog.show();
             }
+        });
+
+        //define onClickListner method for each page
+        add.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dbRefw = FirebaseDatabase.getInstance().getReference();
+
+                aPA.setDistance(Integer.parseInt(txtdist.getText().toString()));
+                aPA.setWorkoutName(txtworkout.getText().toString());
+
+                dbRefw.child("plan").push().setValue(aPA);
+
+                Log.d("added","data aded");
+            }
+
         });
 
 
