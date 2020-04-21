@@ -63,7 +63,14 @@ public class add_plan extends AppCompatActivity implements View.OnClickListener 
         add = (Button) findViewById(R.id.addBtn);
 
         //define onClickListner method for each page
-        add.setOnClickListener(this);
+        add.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dbRefw = FirebaseDatabase.getInstance().getReference();
+
+                private void writeNewData(String )
+            }
+        });
 
 
         txtstrtm.setOnClickListener(new View.OnClickListener() {
@@ -114,6 +121,7 @@ public class add_plan extends AppCompatActivity implements View.OnClickListener 
         });
 
 
+        // Add workout plan clear btn toast message
         btnclr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
