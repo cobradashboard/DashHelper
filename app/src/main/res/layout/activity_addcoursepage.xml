@@ -12,7 +12,7 @@
         android:layout_width="412dp"
         android:layout_height="143dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/Time4"
+        android:background="@drawable/time4"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -313,7 +313,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/ui1h"
+        android:background="@drawable/btn"
 
         android:text="SAVE"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -331,7 +331,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/ui1h"
+        android:background="@drawable/btn"
 
         android:text="CLEAR"
         app:layout_constraintBottom_toBottomOf="parent"

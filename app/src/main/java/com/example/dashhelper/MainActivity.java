@@ -17,16 +17,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        work=(CardView)findViewById(R.id.cardId1);
-        holiday=(CardView)findViewById(R.id.cardId2);
-        timetable=(CardView)findViewById(R.id.cardId3);
-        community=(CardView)findViewById(R.id.cardId4);
-        login=(Button)findViewById(R.id.button3);
+         timetable=(CardView)findViewById(R.id.cardId3);
+         login=(Button)findViewById(R.id.button3);
         logout=(Button)findViewById(R.id.button18);
-        work.setOnClickListener(this);
-        holiday.setOnClickListener(this);
+
+
         timetable.setOnClickListener(this);
-        community.setOnClickListener(this);
+
         login.setOnClickListener(this);
     }
 
