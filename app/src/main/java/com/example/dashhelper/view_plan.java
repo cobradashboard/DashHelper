@@ -42,9 +42,9 @@ public class view_plan extends AppCompatActivity {
         listView = (ListView) findViewById(R.id.listviewtxt);
         btnDelete = (Button)findViewById(R.id.btnDelete);
 
-        wDelPlan=((wdelplan)getApplicationContext());
+//        wDelPlan=((wdelplan)getApplicationContext());
 
-        arrayAdapter = new ArrayAdapter<add_planA>(this, android.R.layout.simple_list_item_1,arrayList);
+
 
         listView.setAdapter(arrayAdapter);
 
@@ -55,9 +55,9 @@ public class view_plan extends AppCompatActivity {
                 for ( DataSnapshot postSnapshot: dataSnapshot.getChildren() ) {
                     add_planA add_p = postSnapshot.getValue(add_planA.class);
                     arrayList.add(add_p);
-
                 }
-                arrayAdapter.notifyDataSetChanged();
+                Plan_list planList = new Plan_list(view_plan.this,arrayList);
+                listView.setAdapter(planList);
                 Log.d("get","Get files");
             }
 
