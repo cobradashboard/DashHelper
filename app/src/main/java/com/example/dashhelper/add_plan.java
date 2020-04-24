@@ -125,7 +125,7 @@ public class add_plan extends AppCompatActivity implements View.OnClickListener 
                 aPA.setWorkoutName(txtworkout.getText().toString());
 
                 dbRefw.child("plan").push().setValue(aPA);
-
+                Toast.makeText(add_plan.this,"New Plan Added",Toast.LENGTH_SHORT).show();
                 Log.d("added","data aded");
             }
 
