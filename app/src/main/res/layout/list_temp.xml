@@ -1,35 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/id_plan"
-        android:layout_width="216dp"
-        android:layout_height="55dp"
+        android:layout_width="208dp"
+        android:layout_height="wrap_content"
         android:text="TextView"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="4dp" />
+        tools:layout_editor_absoluteY="16dp"/>
 
     <Button
         android:id="@+id/btnDelete"
-        android:layout_width="67dp"
+        android:layout_width="82dp"
         android:layout_height="34dp"
         android:background="@drawable/btnexam"
         android:text="@string/btndelete"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.981"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.02"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="338dp" />
+        app:layout_constraintVertical_bias="0.022"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/addUpdate"
@@ -37,10 +38,10 @@
         android:layout_height="34dp"
         android:background="@drawable/custbtnadd"
         android:text="UPDATE"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.02"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="243dp" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/id_plan"
+        app:layout_constraintEnd_toEndOf="@+id/btnDelete"
+        app:layout_constraintHorizontal_bias="0.727"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

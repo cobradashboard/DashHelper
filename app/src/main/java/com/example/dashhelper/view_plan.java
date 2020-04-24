@@ -40,7 +40,7 @@ public class view_plan extends AppCompatActivity {
         dbRefV = FirebaseDatabase.getInstance().getReference().child("plan");
 
         listView = (ListView) findViewById(R.id.listviewtxt);
-        btnDelete = (Button)findViewById(R.id.btnDelete);
+        btnDelete = (Button)findViewById(R.id.addUpdate);
 
 //        wDelPlan=((wdelplan)getApplicationContext());
 
