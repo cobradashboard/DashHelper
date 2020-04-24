@@ -31,11 +31,11 @@ public class Plan_list extends ArrayAdapter {
         LayoutInflater inflater = context.getLayoutInflater();
         View listView = inflater.inflate(R.layout.list_temp, null, true);
 
-        TextView textView_plan = (TextView) listView.findViewById(R.id.id_list_temp_view);
+        TextView textView_plan = (TextView) listView.findViewById(R.id.id_plan);
 
         add_planA plan = list.get(position);
 
-        textView_plan.setText(plan.getWorkoutName());
+        textView_plan.setText(plan.toString());
 
         return listView;
     }

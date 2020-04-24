@@ -52,7 +52,7 @@ public class add_planA {
     }
 
     public String toString(){
-        return this.workoutName + " - "+startingTime+" - "+endingTime+" - "+distance;
+        return this.workoutName + "\n"+startingTime+"\n"+endingTime+"\n"+distance;
     }
 
 }
