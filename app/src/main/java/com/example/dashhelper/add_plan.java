@@ -119,7 +119,7 @@ public class add_plan extends AppCompatActivity implements View.OnClickListener 
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                dbRefw = FirebaseDatabase.getInstance().getReference();
+                dbRefw = FirebaseDatabase.getInstance().getReference("plan");
 
                 aPA.setDistance(Integer.parseInt(txtdist.getText().toString()));
                 aPA.setWorkoutName(txtworkout.getText().toString());
@@ -128,7 +128,7 @@ public class add_plan extends AppCompatActivity implements View.OnClickListener 
 
                 aPA.setID(ID);
 
-                dbRefw.child("plan").push().setValue(aPA);
+                dbRefw.child(ID).setValue(aPA);
                 Toast.makeText(add_plan.this,"New Plan Added",Toast.LENGTH_SHORT).show();
 
                 Intent intent = new Intent(add_plan.this,workouthome.class);

@@ -89,7 +89,8 @@ public class view_plan extends AppCompatActivity {
         final EditText edit_distance = view.findViewById(R.id.edit_diatance);
         final EditText edit_start = view.findViewById(R.id.edit_start);
         final EditText edit_end = view.findViewById(R.id.edit_end);
-        Button update = view.findViewById(R.id.update);
+        final Button update = view.findViewById(R.id.update);
+        final Button delete = view.findViewById(R.id.delete);
 
         edit_title.setText(plan.getWorkoutName());
 //        edit_distance.setText(plan.getDistance());
@@ -107,11 +108,29 @@ public class view_plan extends AppCompatActivity {
                 String distance = edit_distance.getText().toString();
 
                 int dis =Integer.parseInt(distance);
+                String PlanID = plan.getID();
 
-                add_planA newPlan = new add_planA(title,start,end,dis);
+                add_planA newPlan = new add_planA(title,start,end,dis,PlanID);
 
-                DatabaseReference updateDB =  FirebaseDatabase.getInstance().getReference().child(plan.getID());
+                DatabaseReference updateDB =  FirebaseDatabase.getInstance().getReference("plan").child(PlanID);
 
+                System.out.println(PlanID);
+                updateDB.setValue(newPlan);
+
+                Toast.makeText(view_plan.this,"Updated",Toast.LENGTH_SHORT).show();
+
+                startActivity(new Intent(view_plan.this,view_plan.class));
+            }
+        });
+
+        delete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DatabaseReference deleteDB =  FirebaseDatabase.getInstance().getReference("plan").child(plan.getID());
+
+                deleteDB.removeValue();
+                Toast.makeText(view_plan.this,"Deleted",Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(view_plan.this,view_plan.class));
             }
         });
         AlertDialog dialog = builder.create();

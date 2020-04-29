@@ -16,10 +16,10 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintHorizontal_bias="0.088"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.284"
+        app:layout_constraintVertical_bias="0.23"
         tools:text="@string/addWorkoutName" />
 
     <EditText
@@ -34,6 +34,7 @@
         android:textSize="16sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView13"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.272"
         app:layout_constraintStart_toEndOf="@+id/textView13" />
 
     <TextView
@@ -50,7 +51,7 @@
         app:layout_constraintHorizontal_bias="0.079"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView13"
-        app:layout_constraintVertical_bias="0.13"
+        app:layout_constraintVertical_bias="0.045"
         tools:text="@string/addstarttime" />
 
     <EditText
@@ -85,7 +86,7 @@
         app:layout_constraintHorizontal_bias="0.079"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView14"
-        app:layout_constraintVertical_bias="0.174"
+        app:layout_constraintVertical_bias="0.052"
         tools:text="@string/addendtime" />
 
     <EditText
@@ -114,10 +115,10 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintHorizontal_bias="0.115"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Isdate"
-        app:layout_constraintVertical_bias="0.203"
+        app:layout_constraintVertical_bias="0.063"
         tools:text="@string/adddistance" />
 
     <EditText
@@ -145,7 +146,7 @@
         android:text="Update"
         app:layout_constraintBaseline_toBaselineOf="@+id/btnclrA"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.141"
+        app:layout_constraintHorizontal_bias="0.175"
         app:layout_constraintStart_toStartOf="parent"
         tools:text="Update" />
 
@@ -154,7 +155,6 @@
         android:layout_width="144dp"
         android:layout_height="56dp"
         android:layout_marginStart="200dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/custbtnadd"
@@ -162,10 +162,10 @@
         android:text="@string/clearviewbtn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintHorizontal_bias="0.169"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.859"
+        app:layout_constraintTop_toBottomOf="@+id/edit_diatance"
+        app:layout_constraintVertical_bias="0.059"
         tools:text="@string/clearviewbtn" />
 
     <Button
@@ -179,7 +179,7 @@
         app:layout_constraintHorizontal_bias="0.448"
         app:layout_constraintStart_toEndOf="@+id/edit_start"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.442" />
+        app:layout_constraintVertical_bias="0.306" />
 
     <Button
         android:id="@+id/end"
@@ -192,7 +192,20 @@
         app:layout_constraintHorizontal_bias="0.448"
         app:layout_constraintStart_toEndOf="@+id/edit_end"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.575" />
+        app:layout_constraintVertical_bias="0.386" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="138dp"
+        android:layout_height="56dp"
+        android:background="@drawable/btnexam"
+        android:text="@string/btndelete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.194"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/update"
+        app:layout_constraintVertical_bias="0.079" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
