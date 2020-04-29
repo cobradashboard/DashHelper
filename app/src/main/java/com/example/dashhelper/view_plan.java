@@ -136,4 +136,6 @@ public class view_plan extends AppCompatActivity {
         AlertDialog dialog = builder.create();
         dialog.show();
     }
+
+
 }
