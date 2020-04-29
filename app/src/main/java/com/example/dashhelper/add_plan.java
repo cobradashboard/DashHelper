@@ -48,10 +48,10 @@ public class add_plan extends AppCompatActivity implements View.OnClickListener 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_plan);
 
-        txtworkout = findViewById(R.id.workoutnameA);
-        txtstrtm =  findViewById(R.id.txtstarttimeA);
-        txtendtm = findViewById(R.id.txtendtimeA);
-        txtdist = findViewById(R.id.txtdistanceA);
+        txtworkout = findViewById(R.id.edit_title);
+        txtstrtm =  findViewById(R.id.edit_start);
+        txtendtm = findViewById(R.id.edit_end);
+        txtdist = findViewById(R.id.edit_diatance);
 
 
         btnadd = findViewById(R.id.addBtn);

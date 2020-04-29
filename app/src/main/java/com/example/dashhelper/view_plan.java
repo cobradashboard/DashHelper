@@ -2,15 +2,19 @@ package com.example.dashhelper;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -44,10 +48,6 @@ public class view_plan extends AppCompatActivity {
 
 //        wDelPlan=((wdelplan)getApplicationContext());
 
-
-
-        listView.setAdapter(arrayAdapter);
-
         dbRefV.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -64,6 +64,14 @@ public class view_plan extends AppCompatActivity {
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
 
+            }
+        });
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                add_planA plan = arrayList.get(position);
+                showUpdate(plan);
             }
         });
 
@@ -93,5 +101,26 @@ public class view_plan extends AppCompatActivity {
         });
 
 
+    }
+
+    private void showUpdate(add_planA plan) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+
+        LayoutInflater inflater = getLayoutInflater();
+
+        View view = inflater.inflate(R.layout.activity_update_plan,null);
+
+        EditText edit_title = view.findViewById(R.id.edit_title);
+        EditText edit_distance = view.findViewById(R.id.edit_diatance);
+        EditText edit_start = view.findViewById(R.id.edit_start);
+        EditText edit_end = view.findViewById(R.id.edit_end);
+
+        edit_title.setText(plan.getWorkoutName());
+        edit_distance.setText(plan.getDistance());
+        edit_start.setText(plan.getStartingTime());
+        edit_end.setText(plan.getEndingTime());
+
+        Dialog dialog = builder.create();
+        dialog.show();
     }
 }
