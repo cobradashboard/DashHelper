@@ -6,50 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".add_plan">
 
-    <LinearLayout
-        android:id="@+id/linearLayout8"
-        android:layout_width="412dp"
-        android:layout_height="132dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/board1"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
-
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="264dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="90dp"
-            android:fontFamily="sans-serif-medium"
-            android:text="@string/addworkoutplan"
-            android:textAlignment="center"
-            android:textColor="@color/lightgray"
-            android:textSize="25sp"
-            android:textStyle="normal|bold" />
-    </LinearLayout>
-
     <TextView
         android:id="@+id/textView13"
         android:layout_width="170dp"
         android:layout_height="36dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
         android:text="@string/addWorkoutName"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintHorizontal_bias="0.097"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout8"
-        app:layout_constraintVertical_bias="0.16"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.284"
         tools:text="@string/addWorkoutName" />
 
     <EditText
@@ -165,19 +135,19 @@
         app:layout_constraintStart_toEndOf="@+id/Iedate" />
 
     <Button
-        android:id="@+id/addBtn"
+        android:id="@+id/update"
         android:layout_width="138dp"
         android:layout_height="56dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/custbtnadd"
         android:onClick="onClick"
-        android:text="@string/addplanbtn"
+        android:text="Update"
         app:layout_constraintBaseline_toBaselineOf="@+id/btnclrA"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.141"
         app:layout_constraintStart_toStartOf="parent"
-        tools:text="@string/addplanbtn" />
+        tools:text="Update" />
 
     <Button
         android:id="@+id/btnclrA"

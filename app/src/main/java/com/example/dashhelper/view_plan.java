@@ -44,7 +44,7 @@ public class view_plan extends AppCompatActivity {
         dbRefV = FirebaseDatabase.getInstance().getReference().child("plan");
 
         listView = (ListView) findViewById(R.id.listviewtxt);
-        btnDelete = (Button)findViewById(R.id.addUpdate);
+
 
 //        wDelPlan=((wdelplan)getApplicationContext());
 
@@ -74,53 +74,47 @@ public class view_plan extends AppCompatActivity {
                 showUpdate(plan);
             }
         });
-
-        btnDelete.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                final String str = wDelPlan.getGvalue_workoutName().substring(0,8);
-                if (str.equals("")){
-                    Toast.makeText(view_plan.this,"Please Select Item before Delete..!",Toast.LENGTH_SHORT).show();
-                }else {
-                    dbRefV.child("Workout").child(str).addListenerForSingleValueEvent(new ValueEventListener() {
-                        @Override
-                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                            dbRefV.child(str).removeValue();
-                        }
-
-                        @Override
-                        public void onCancelled(@NonNull DatabaseError databaseError) {
-
-                        }
-                    });
-                    Toast.makeText(view_plan.this,"Workout is Deleted..!",Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(getApplicationContext(),view_plan.class);
-                    startActivity(intent);
-                }
-            }
-        });
-
-
     }
 
-    private void showUpdate(add_planA plan) {
+    private void showUpdate(final add_planA plan) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
 
         LayoutInflater inflater = getLayoutInflater();
 
         View view = inflater.inflate(R.layout.activity_update_plan,null);
 
-        EditText edit_title = view.findViewById(R.id.edit_title);
-        EditText edit_distance = view.findViewById(R.id.edit_diatance);
-        EditText edit_start = view.findViewById(R.id.edit_start);
-        EditText edit_end = view.findViewById(R.id.edit_end);
+        builder.setView(view);
+
+        final EditText edit_title = view.findViewById(R.id.edit_title);
+        final EditText edit_distance = view.findViewById(R.id.edit_diatance);
+        final EditText edit_start = view.findViewById(R.id.edit_start);
+        final EditText edit_end = view.findViewById(R.id.edit_end);
+        Button update = view.findViewById(R.id.update);
 
         edit_title.setText(plan.getWorkoutName());
-        edit_distance.setText(plan.getDistance());
+//        edit_distance.setText(plan.getDistance());
         edit_start.setText(plan.getStartingTime());
         edit_end.setText(plan.getEndingTime());
 
-        Dialog dialog = builder.create();
+
+        update.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                String title = edit_title.getText().toString();
+                String start = edit_start.getText().toString();
+                String end = edit_end.getText().toString();
+                String distance = edit_distance.getText().toString();
+
+                int dis =Integer.parseInt(distance);
+
+                add_planA newPlan = new add_planA(title,start,end,dis);
+
+                DatabaseReference updateDB =  FirebaseDatabase.getInstance().getReference().child(plan.getID());
+
+            }
+        });
+        AlertDialog dialog = builder.create();
         dialog.show();
     }
 }

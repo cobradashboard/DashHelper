@@ -37,24 +37,6 @@
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/addUpdate"
-        android:layout_width="138dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/custbtnadd"
-        android:text="UPDATE"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.186"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.962"
-        tools:text="@string/btnupdate" />
-
     <!--    <Button-->
     <!--        android:id="@+id/button7"-->
     <!--        android:layout_width="136dp"-->
@@ -76,17 +58,17 @@
     <!--        tools:text="@string/btnworkdone" />-->
 
 
-
     <ListView
         android:id="@+id/listviewtxt"
         android:layout_width="400dp"
         android:layout_height="490dp"
+        android:clickable="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout8"
-        app:layout_constraintVertical_bias="0.057" />
+        app:layout_constraintVertical_bias="0.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

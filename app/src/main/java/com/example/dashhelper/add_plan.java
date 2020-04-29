@@ -54,7 +54,7 @@ public class add_plan extends AppCompatActivity implements View.OnClickListener 
         txtdist = findViewById(R.id.edit_diatance);
 
 
-        btnadd = findViewById(R.id.addBtn);
+        btnadd = findViewById(R.id.update);
         btnclr = findViewById(R.id.btnclrA);
         start = findViewById(R.id.start);
         end = findViewById(R.id.end);
@@ -62,7 +62,7 @@ public class add_plan extends AppCompatActivity implements View.OnClickListener 
         aPA = new add_planA();
 
         // define variables
-        add = (Button) findViewById(R.id.addBtn);
+        add = (Button) findViewById(R.id.update);
 
 
 
@@ -123,6 +123,10 @@ public class add_plan extends AppCompatActivity implements View.OnClickListener 
 
                 aPA.setDistance(Integer.parseInt(txtdist.getText().toString()));
                 aPA.setWorkoutName(txtworkout.getText().toString());
+
+                String ID = dbRefw.push().getKey();
+
+                aPA.setID(ID);
 
                 dbRefw.child("plan").push().setValue(aPA);
                 Toast.makeText(add_plan.this,"New Plan Added",Toast.LENGTH_SHORT).show();

@@ -6,6 +6,15 @@ public class add_planA {
     private String startingTime;
     private String endingTime;
     private int distance;
+    private String ID;
+
+    public String getID() {
+        return ID;
+    }
+
+    public void setID(String ID) {
+        this.ID = ID;
+    }
 
     public String getWorkoutName() {
         return workoutName;
@@ -41,11 +50,12 @@ public class add_planA {
         this.distance = distance;
     }
 
-    public add_planA(String workoutName, String startingTime, String endingTime, int distance) {
+    public add_planA(String workoutName, String startingTime, String endingTime, int distance, String id) {
         this.workoutName = workoutName;
         this.startingTime = startingTime;
         this.endingTime = endingTime;
         this.distance = distance;
+        this.ID = id;
     }
 
     public add_planA() {
