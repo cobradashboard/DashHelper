@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         work=(CardView)findViewById(R.id.cardId1);
         holiday=(CardView)findViewById(R.id.cardId2);
         timetable=(CardView)findViewById(R.id.cardId3);
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         holiday.setOnClickListener(this);
         timetable.setOnClickListener(this);
         community.setOnClickListener(this);
+
         login.setOnClickListener(this);
     }
 
@@ -38,8 +40,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         {
 
 
+
             case R.id.cardId4 : i=new Intent(this,community.class);startActivity(i);break;
             case R.id.button3 : i=new Intent(this,login.class);startActivity(i);break;
+
+            case R.id.cardId3 : i=new Intent(this,timetable.class);startActivity(i);break;
+
+
 
         }
 
