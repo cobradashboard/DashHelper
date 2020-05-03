@@ -1,6 +1,8 @@
 package com.example.dashhelper;
 
-public class newaddexammodel {
+import java.io.Serializable;
+
+public class newaddexammodel implements Serializable {
     private String exam;
     private String subject;
     private String place;
