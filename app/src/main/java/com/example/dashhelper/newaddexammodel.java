@@ -5,8 +5,18 @@ public class newaddexammodel {
     private String subject;
     private String place;
     private String date;
+    private String ID;
+
 
     public newaddexammodel() {
+    }
+
+    public newaddexammodel(String exam, String subject, String place, String date, String ID) {
+        this.exam = exam;
+        this.subject = subject;
+        this.place = place;
+        this.date = date;
+        this.ID = ID;
     }
 
     public String getExam() {
@@ -39,6 +49,14 @@ public class newaddexammodel {
 
     public void setDate(String date) {
         this.date = date;
+    }
+
+    public String getID() {
+        return ID;
+    }
+
+    public void setID(String ID) {
+        this.ID = ID;
     }
 
     public String toString(){

@@ -22,6 +22,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class newaddcourseview extends AppCompatActivity {
     DatabaseReference dbRefV;
@@ -30,6 +31,8 @@ public class newaddcourseview extends AppCompatActivity {
     ArrayAdapter<String> arrayAdapter;
     Button btndeleteAC;
     wdelplan delttb;
+
+    List<addcoursemodel> listOfmodels;
     //private Button done;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,33 +41,24 @@ public class newaddcourseview extends AppCompatActivity {
         dbRefV = FirebaseDatabase.getInstance().getReference("TimeTable");
         listView = (ListView) findViewById(R.id.lv1);
         btndeleteAC = (Button)findViewById(R.id.btndeleteAC);
-        arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,arrayList);
-        listView.setAdapter(arrayAdapter);
-
-        delttb = (wdelplan)getApplicationContext();
 
 
-        dbRefV.addChildEventListener(new ChildEventListener() {
+        listOfmodels = new ArrayList<>();
+//        delttb = (wdelplan)getApplicationContext();
+
+
+        dbRefV.addValueEventListener(new ValueEventListener() {
             @Override
-            public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
-                String value = dataSnapshot.getValue(addcoursemodel.class).toString();
-                arrayList.add(value);
-                arrayAdapter.notifyDataSetChanged();
-            }
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                addcoursemodel model = new addcoursemodel();
 
-            @Override
-            public void onChildChanged(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
+                for(DataSnapshot snapshot : dataSnapshot.getChildren()){
+                    model = snapshot.getValue(addcoursemodel.class);
+                    listOfmodels.add(model);
+                }
 
-            }
-
-            @Override
-            public void onChildRemoved(@NonNull DataSnapshot dataSnapshot) {
-
-            }
-
-            @Override
-            public void onChildMoved(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
-
+                course_list course_list = new course_list(newaddcourseview.this,listOfmodels);
+                listView.setAdapter(course_list);
             }
 
             @Override
@@ -75,35 +69,40 @@ public class newaddcourseview extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                delttb.setGval_subject(arrayList.get(position));
-                delttb.setGval_teacher(arrayList.get(position));
+                addcoursemodel  addcoursemodel = listOfmodels.get(position);
+
+                Intent intent = new Intent(newaddcourseview.this,showCourseDetails.class);
+                intent.putExtra("OBJECT", addcoursemodel);
+
+                startActivity(intent);
+
             }
         });
-        btndeleteAC.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                final String ttb = delttb.getGval_subject().substring(0,3);
-                if (ttb==""){
-                    Toast.makeText(newaddcourseview.this,"Please Select Item before Delete..!",Toast.LENGTH_SHORT).show();
-                }else {
-                    dbRefV.child("TimeTable").child(ttb).addListenerForSingleValueEvent(new ValueEventListener() {
-                        @Override
-                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                            dbRefV.child(ttb).removeValue();
-                        }
-
-                        @Override
-                        public void onCancelled(@NonNull DatabaseError databaseError) {
-
-                        }
-                    });
-                    Toast.makeText(newaddcourseview.this,"Course is Deleted..!",Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(getApplicationContext(),newaddcourseview.class);
-                    startActivity(intent);
-                }
-            }
-        });
+//        btndeleteAC.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+//                final String ttb = delttb.getGval_subject().substring(0,3);
+//                if (ttb==""){
+//                    Toast.makeText(newaddcourseview.this,"Please Select Item before Delete..!",Toast.LENGTH_SHORT).show();
+//                }else {
+//                    dbRefV.child("TimeTable").child(ttb).addListenerForSingleValueEvent(new ValueEventListener() {
+//                        @Override
+//                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+//                            dbRefV.child(ttb).removeValue();
+//                        }
+//
+//                        @Override
+//                        public void onCancelled(@NonNull DatabaseError databaseError) {
+//
+//                        }
+//                    });
+//                    Toast.makeText(newaddcourseview.this,"Course is Deleted..!",Toast.LENGTH_SHORT).show();
+//                    Intent intent = new Intent(getApplicationContext(),newaddcourseview.class);
+//                    startActivity(intent);
+//                }
+//            }
+//        });
     }
 
 }

@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".newaddexam_view"></activity>
+        <activity android:name=".showCourseDetails"></activity>
+        <activity android:name=".newaddexam_view" />
         <activity android:name=".view_result" />
         <activity android:name=".addexam_page" />
         <activity android:name=".addexam_homepage" />

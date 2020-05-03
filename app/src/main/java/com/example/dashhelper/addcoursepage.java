@@ -144,7 +144,7 @@ public class addcoursepage extends AppCompatActivity  /*implements View.OnClickL
         btnsaveAC.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                dbref = FirebaseDatabase.getInstance().getReference().child("TimeTable");
+                dbref = FirebaseDatabase.getInstance().getReference("TimeTable");
                 try {
                     if (TextUtils.isEmpty(subjectAC.getText().toString()))
                         Toast.makeText(getApplicationContext(),"Please enter a Subject Name",Toast.LENGTH_SHORT).show();
@@ -157,14 +157,17 @@ public class addcoursepage extends AppCompatActivity  /*implements View.OnClickL
                     else if (TextUtils.isEmpty(dateAC.getText().toString()))
                         Toast.makeText(getApplicationContext(),"Please enter a Date",Toast.LENGTH_SHORT).show();
                     else {
+                        String ID = dbref.push().getKey();
+
                         acm.setSubject(subjectAC.getText().toString().trim());
                         acm.setTeacher(teacherAC.getText().toString().trim());
                         acm.setPlace(placeAC.getText().toString().trim());
                         acm.setTime(timeAC.getText().toString().trim());
                         acm.setDate(dateAC.getText().toString().trim());
+                        acm.setID(ID);
 
                         //dbref.push().setValue(acm);
-                        dbref.child(subjectAC.getText().toString()).setValue(acm);
+                        dbref.child(ID).setValue(acm);
                         Toast.makeText(getApplicationContext(),"Data insert Successfully",Toast.LENGTH_LONG).show();
 
                        clearData();
