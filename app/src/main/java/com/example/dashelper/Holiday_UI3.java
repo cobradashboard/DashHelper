@@ -76,14 +76,14 @@ public class Holiday_UI3 extends AppCompatActivity {
        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
            @Override
            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-               holi_del.setGvalue_Hname(arrayList.get(position));
+               holi_del.setGvalue_Hid(arrayList.get(position));
                holi_del.setGvalue_Hname(arrayList.get(position));
            }
        });
        btndel.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
-               final String str=holi_del.getGvalue_Hname();
+               final String str=holi_del.getGvalue_Hid();
                if(str==""){
                    Toast.makeText(Holiday_UI3.this,"Please select item to delete",Toast.LENGTH_LONG).show();
                }else{
