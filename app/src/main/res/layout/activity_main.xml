@@ -41,8 +41,8 @@
         android:id="@+id/linearLayout4"
         android:layout_width="169dp"
 
-        android:layout_height="233dp"
-        android:layout_marginStart="28dp"
+        android:layout_height="226dp"
+        android:layout_marginStart="25dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
@@ -54,7 +54,7 @@
         app:layout_constraintHorizontal_bias="0.009"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.073">
+        app:layout_constraintVertical_bias="0.074">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardId1"
@@ -69,6 +69,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:clickable="false"
                 android:gravity="center"
                 android:orientation="vertical">
 
@@ -102,24 +103,24 @@
         </androidx.cardview.widget.CardView>
     </LinearLayout>
 
+
     <LinearLayout
         android:id="@+id/linearLayout10"
-        android:layout_width="168dp"
+        android:layout_width="169dp"
 
-        android:layout_height="233dp"
+        android:layout_height="226dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="20dp"
         android:layout_marginBottom="8dp"
         android:clipToPadding="false"
         android:gravity="center"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.833"
-        app:layout_constraintStart_toEndOf="@+id/linearLayout4"
+        app:layout_constraintHorizontal_bias="0.888"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.072">
+        app:layout_constraintVertical_bias="0.074">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardId2"
@@ -133,7 +134,8 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="188dp"
+                android:layout_height="match_parent"
+                android:clickable="false"
                 android:gravity="center"
                 android:orientation="vertical">
 
@@ -171,7 +173,7 @@
         android:id="@+id/linearLayout5"
         android:layout_width="169dp"
 
-        android:layout_height="225dp"
+        android:layout_height="226dp"
         android:layout_marginStart="28dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
@@ -180,10 +182,10 @@
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.009"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toTopOf="@+id/linearLayout4"
+        app:layout_constraintVertical_bias="0.844">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardId3"
@@ -230,25 +232,22 @@
         </androidx.cardview.widget.CardView>
     </LinearLayout>
 
-
     <LinearLayout
         android:id="@+id/linearLayout6"
         android:layout_width="169dp"
 
-        android:layout_height="225dp"
+        android:layout_height="226dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="-5dp"
-        android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:clipToPadding="false"
         android:gravity="center"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.481"
-        app:layout_constraintStart_toEndOf="@+id/linearLayout5"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout10"
-        app:layout_constraintVertical_bias="0.025">
+        app:layout_constraintHorizontal_bias="0.888"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout10"
+        app:layout_constraintVertical_bias="0.844">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardId4"
@@ -297,8 +296,8 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="417dp"
-        android:layout_height="239dp"
+        android:layout_width="412dp"
+        android:layout_height="232dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:gravity="center"
@@ -313,29 +312,30 @@
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="258dp"
+            android:layout_width="273dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="104dp"
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
             android:fontFamily="@font/aclonica"
             android:text="@string/dashhelp"
             android:textAlignment="center"
-            android:textColor="#FFFF"
+            android:textColor="#FFFFFF"
             android:textSize="24sp" />
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="211dp"
-            android:layout_height="36dp"
-            android:layout_marginStart="8dp"
+            android:layout_width="278dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="2dp"
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
             android:text="@string/dashhelpcontent"
             android:textAlignment="center"
-            android:textColor="#FFFFFF" />
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
     </LinearLayout>
 
 

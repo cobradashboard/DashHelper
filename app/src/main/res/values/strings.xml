@@ -34,7 +34,6 @@
     <string name="viewcouse">View Course</string>
     <string name="hol">holl</string>
     <string name="addworkoutplan">Add Workout Plan</string>
-
     <string name="addstarttime">Starting Time</string>
     <string name="addendtime">Ending Time</string>
     <string name="adddistance">Distance</string>
@@ -54,18 +53,15 @@
     <string name="ViewAC">View Course Plan</string>
     <string name="btndelete">DELETE</string>
     <string name="UpadteAC">UPDATE</string>
-
     <string name="xammmm">Exam</string>
     <string name="timetablehome">Managing your school or university life. Save your timetable and all tasks from courses to exams.</string>
     <string name="addexam">Add Exams</string>
     <string name="viewexam">View Exam</string>
-
     <string name="goodluck">Good Luck For Your Exam</string>
     <string name="examdes">Do yoy best!</string>
     <string name="examname">Enter Exam Name</string>
     <string name="save">Save</string>
     <string name="exam">Exam View</string>
-
     <string name="addresults">View Results</string>
     <string name="congrats">Congratulations</string>
     <string name="examcongrat">Congratulations on your excellent success and good luck for more progress. I have complete faith that you’ll pass your exam with good score.</string>
@@ -73,5 +69,12 @@
     <string name="update_exam">Update Exam</string>
     <string name="update">Update</string>
     <string name="delete">Delete</string>
+    <string name="addWorkoutName">Enter Workout</string>
+    <string name="plan1">Plan1</string>
+    <string name="plan2">Plan2</string>
+    <string name="plan3">Plan3</string>
+    <string name="donnedworkoutplan">Donned Workouts</string>
+    <string name="viewworkoutplan">View Workout Plan</string>
+    <string name="btnupdate">UPDATE</string>
 
 </resources>

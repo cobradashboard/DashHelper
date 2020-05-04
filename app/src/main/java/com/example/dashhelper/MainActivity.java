@@ -1,17 +1,19 @@
 package com.example.dashhelper;
 
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private CardView work,holiday,timetable,community;
     private Button login,logout;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,7 +45,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             case R.id.cardId4 : i=new Intent(this,community.class);startActivity(i);break;
             case R.id.button3 : i=new Intent(this,login.class);startActivity(i);break;
-
+             case R.id.cardId1 : i=new Intent(this,workouthome.class);startActivity(i);break;
             case R.id.cardId3 : i=new Intent(this,timetable.class);startActivity(i);break;
 
 
@@ -51,6 +53,5 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
 
     }
-
 
 }
